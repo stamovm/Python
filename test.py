@@ -22,4 +22,18 @@ def calculatePay():
 
 #-----------------------------------------------------------
 #test
-calculatePay()
+#calculatePay()
+
+
+def computepay(h, r):
+    overtime = 0.0
+    if h > 40:
+        overtime = h - 40
+        h = 40.0
+    pay = h * r +  1.5 * r * overtime
+    return pay
+
+hrs = input("Enter Hours:")
+rate = input("Enter Rate per hour:")
+p = computepay(float(hrs), float(rate))
+print("Pay", p)

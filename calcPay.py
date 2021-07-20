@@ -15,8 +15,8 @@ def calculatePay():
     rate = readFlot("Enter Rate per hour:")
     overtime = 0.0
     if hrs > 40:
-        overtime = h - 40
-        h = 40.0
+        overtime = hrs - 40
+        hrs = 40.0
     pay = hrs * rate +  1.5 * rate * overtime
     print(pay)
 

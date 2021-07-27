@@ -18,7 +18,5 @@ while True:
     if num > largest:
         largest = num
 
-    break  #bad
-#bad
 print("Maximum is", largest)
 print("Minimum is", smallest)
